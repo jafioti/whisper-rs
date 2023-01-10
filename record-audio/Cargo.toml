@@ -1,0 +1,25 @@
+[package]
+name = "record-audio"
+version = "0.1.1"
+authors = ["Mayank <mnk.rana@gmail.com>"]
+description = "record-audio is a terminal-based audio recorder and playback crate."
+edition = "2021"
+categories = ["cli"]
+keywords = ["audio", "record", "playback", "cli"]
+documentation = "https://github.com/mnkrana/record-audio"
+homepage = "https://github.com/mnkrana/record-audio"
+repository = "https://github.com/mnkrana/record-audio"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+clap = { version = "3.1.18", features = ["derive"] }
+cpal = "0.13.5"
+ctrlc = "3.2.2"
+color-eyre = "0.6.1"
+chrono = "0.4.19"
+hound = "3.4.0"
+symphonia = {version = "0.5.0", features = ["isomp4", "mp3", "aac"] }
+log = "0.4.17"
+dasp = { version = "0.11.0", features = ["signal", "interpolate", "interpolate-linear"] }
+half = "2.2.1"
